@@ -1,0 +1,20 @@
+
+<ion-content>
+ <ion-searchbar class="mt-2" (ionChange)="buscarProducto($event)"></ion-searchbar>
+  <div class="container">
+    <div class="ion-col-6" *ngFor="let product of products">
+      <ion-card>
+        <ion-card-content>
+          <div class="card-title">
+            {{product.nombre}}
+          </div>
+          <ion-button (click)="addCart(product)" class="btn-agregar">
+            <ion-icon name="bag-add-outline"></ion-icon> &nbsp;&nbsp; Agregar
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+ 
+
+</ion-content>

@@ -1,0 +1,69 @@
+.icon-profile{
+    font-size:6em; 
+    font-weight: bold;
+    color :rgb(67, 98, 155);
+}
+.section-profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fw-bold{
+    font-weight: bold !important; 
+}
+.poweroff{
+    color: #fff !important;
+    font-size: 2.1em !important;
+    font-weight: bold;
+}
+.button-editar{
+    width: 100%;
+    text-align: center
+}
+.w-75{
+    width: 75%;
+}
+.table-info{
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.row{
+    width: 100%;
+    display: inline-flex;
+    padding:.1em;
+    border-bottom: 1px solid #ccc;
+    
+}
+.table-info .key{
+    width: 40%;
+    padding:.2em 2em;
+    font-weight: bold;
+}
+.table-info .value{
+    width: 60%;
+}
+.row-data{
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color:#3880ff;
+    padding:1em;
+}
+.section-edit-password{
+    width: 100%;
+    text-align: center;
+
+}
+.input-text{
+    border:1px solid #ccc;
+    width: 80%;
+    margin: .5em auto;
+    background-color:#fff;
+    color: black;
+    padding: 0.5em .2em;
+    outline: none;
+}

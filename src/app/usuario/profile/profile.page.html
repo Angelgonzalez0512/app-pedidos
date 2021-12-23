@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar class="toolbar-app">
+    <ion-buttons slot="primary">
+      <ion-button color="white" (click)="presentAlertConfirm()">
+        <ion-icon name="power-sharp" class="poweroff"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="section-profile mt-2">
+    <ion-icon name="person-circle-outline" class="icon-profile"></ion-icon>
+  </div>
+  <div class="w-100 text-center mt-2">
+    <ion-text>
+      <h1 class="fw-bold">{{user.nombres + " "+ user.apellidos}}</h1>
+    </ion-text>
+  </div>
+  <div class="w-100 text-center mt-2">
+    <p>{{user.correo}}</p>
+  </div>
+  <div class="table-info">
+    <div class="row-data">Datos del usuario</div>
+    <div class="row">
+      <div class="key">
+        Nombres
+      </div>
+      <div class="value">
+       : {{user.nombres + " "+ user.apellidos}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="key">
+        Correo
+      </div>
+      <div class="value">
+       : {{user.correo}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="key">
+        Area
+      </div>
+      <div class="value">
+       : {{user.area}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="key">
+        Cedula
+      </div>
+      <div class="value">
+       : {{user.cedula}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="key">
+        Dni
+      </div>
+      <div class="value">
+       : {{user.dni}}
+      </div>
+    </div>
+  </div>
+  <div class="button-editar">
+
+    <ion-button class="w-75" (click)="sectionEditPassword()">
+      <ion-icon name="pencil"></ion-icon> &nbsp; &nbsp; &nbsp; Editar contraseña
+    </ion-button>
+  </div>
+  <div class="section-edit-password" *ngIf="editpassword">
+    <form action="" (submit)="editpassword.valid && changePassword()" #editpassword="ngForm">
+    <ion-label>Nueva contraseña</ion-label>
+    <input type="password" name="password" [(ngModel)]="user.passwordnew" required class="input-text" id="password">
+    <ion-button class="mt-2" type="submit"> <ion-icon name="save"></ion-icon> &nbsp;  Guardar</ion-button>
+  </form>
+  </div>
+
+</ion-content>

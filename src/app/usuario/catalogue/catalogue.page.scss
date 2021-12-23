@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.ion-col-6{
+    width:50% !important;
+    margin :auto;
+}
+.card-title{
+    font-size:1.3em !important;
+    font-weight:bold ;
+
+}
+.p-relative{
+    position:relative;
+}
+.elev-top{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.btn-agregar{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}

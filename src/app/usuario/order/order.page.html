@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="toolbar-app">
+    <ion-buttons slot="secondary">
+      <ion-button color="white" [routerLink]="['/user/home']">
+        <ion-icon name="arrow-back" class="fw-3"  ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Orden alimentos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+    
+      <ion-tab-button tab="catalogue">
+        <ion-icon name="apps"></ion-icon>
+        <ion-label>productos</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="cart">
+        <ion-icon name="cart"></ion-icon>
+        <ion-label>carrito</ion-label>
+        <ion-badge>{{_cart.order.detalles.length}}</ion-badge>
+      </ion-tab-button>
+      <ion-tab-button tab="others">
+        <ion-icon name="add-circle"></ion-icon>
+        <ion-label>Otros</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="place">
+        <ion-icon name="send"></ion-icon>
+        <ion-label>Enviar</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  
+ </ion-content>

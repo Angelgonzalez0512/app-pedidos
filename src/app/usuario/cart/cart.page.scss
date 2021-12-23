@@ -1,0 +1,83 @@
+.table{
+    width: 100%;
+}
+.table-header{
+    width: 100%;
+    background-color:blue;
+    color: white;
+    display: inline-flex;
+    padding:.5em;
+}
+.item-producto{
+    width: 50%;
+    overflow-x: hidden;
+}
+.item-cantidad{
+    width: 30%;
+}
+.item-cantidad-detail{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.item-delete{
+    width: 10%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.table-content{
+    width: 100%;
+}
+.table-content .row{
+    width: 100%;
+    padding: .5em;
+    display: inline-flex;
+    border-bottom: 1px solid #ccc;
+}
+.d-flex{
+    display: flex !important;
+}
+.form-control{
+    width: 100%;
+    background-color:#fff;
+    border: 1px solid #ccc;
+    padding: .5em .2em;
+    outline: none;
+}
+.pc-2{
+padding: .2em .3em;
+}
+.row-form{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.text-warning{
+    color: orange;
+}
+.text-primary{
+    color: blue;
+}
+.fs-2{
+    font-size: 2em;
+}
+.fs-1{
+    font-size: 1em;
+}
+.otros-productos{
+    font-weight: bold;
+}
+.not-found{
+    width: 100%;
+    text-align: center;
+}
+.option-text{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin-top:2em;
+}

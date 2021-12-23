@@ -1,0 +1,51 @@
+
+
+<ion-content>
+  <ion-card class="mt-3">
+    <ion-text> <h3 class="otros-productos">Otros productos</h3></ion-text>
+    <form action="" (submit)="otroproducto.valid && addOtherProduct(otherproduct)" #otroproducto="ngForm">
+      <div class="row-form">
+        <div class="item-producto pc-2">
+          <ion-label>Producto</ion-label>
+          <input type="text" name="producto" required [(ngModel)]="otherproduct.producto" class="form-control">
+        </div>
+        <div class="item-cantidad pc-2">
+          <ion-label>Cantidad</ion-label>
+          <input type="text" class="form-control" required name="cantidad" [(ngModel)]="otherproduct.cantidad" type="number">
+        </div>
+        <div class="item-delete pc-2">
+          <ion-button type="submit">+</ion-button>
+        </div>
+
+      </div>
+    </form>
+    <div class="table mt-3">
+      <div class="table-header">
+        <div class="item-producto">
+          Producto
+        </div>
+        <div class="item-cantidad">
+          Cantidad
+        </div>
+        <div class="item-delete">
+          
+        </div>
+      </div>
+      <div class="table-content">
+        <div class="row" *ngFor="let detail of _cart.order.otrosproductos;let i=index" [attr.data-index]="i">
+          <div class="item-producto">
+            {{detail.producto}}
+          </div>
+          <div class="item-cantidad">
+            {{detail.cantidad}}
+          </div>
+          <div class="item-delete">
+            <ion-icon name="trash" (click)="eliminarOtroProducto(i)" class="text-danger fs-1"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </ion-card>
+
+</ion-content>

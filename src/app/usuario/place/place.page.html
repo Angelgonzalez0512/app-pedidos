@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="content">
+    <form action="" (submit)="formactivity.valid && register()" #formactivity="ngForm">
+    <label for="area">Area</label>
+    <ng-select id="area" name="area" [required]="true" (change)="selectArea(areaselected)" [(ngModel)]="areaselected" class="mt-2 mb-2">
+      <ng-option *ngFor="let area of areas" [value]="area._id">{{area.area}}</ng-option>
+    </ng-select>
+    <label for="cedula" class="mt-2">Cedula</label>
+    <ng-select id="cedula" name="cedula" [required]="true"  [(ngModel)]="_cart.order.cedula" class="mt-2 mb-2">
+      <ng-option *ngFor="let cedula of cedulas" [value]="cedula">{{cedula}}</ng-option>
+    </ng-select>
+    <label for="descripcion" class="mt-2">Descripcion</label>
+    <textarea name="descripcion" required [(ngModel)]="_cart.order.descripcion"  class="w-100 h-30 mt-2" id="descripcion"></textarea>
+    <div class="button-submit">
+      <ion-button type="submit">Enviar</ion-button>
+    </div>
+  </form>
+
+  </div>
+
+
+</ion-content>

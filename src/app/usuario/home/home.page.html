@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar class="toolbar-app">
+    <ion-buttons slot="primary">
+      <ion-button color="white" (click)="presentAlertConfirm()">
+        <ion-icon name="power-sharp" class="poweroff"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Pedidos Siderperu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card [routerLink]="['/user/order/catalogue']" >
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="storefront-outline"> &nbsp; </ion-icon>   <h1> &nbsp;&nbsp;&nbsp;Alimentos</h1> 
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['/user/activity/','1']">
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="brush-outline"></ion-icon> <ion-text> <h1> &nbsp;&nbsp;&nbsp;Pintura</h1> </ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['/user/activity/','2']">
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="build-outline"></ion-icon> 
+        <ion-text> <h1>&nbsp;&nbsp;&nbsp;Reparacion</h1> </ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
